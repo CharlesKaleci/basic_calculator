@@ -1,0 +1,71 @@
+*{padding: 0px; margin: 0px; box-sizing: border-box;}
+body{
+    background:#e4dcef;
+}
+.App{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Work Sans', sans-serif;
+}
+.calculator{
+    background-color: #363540;
+    width: 360px;
+    height: 560px;
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 6px;
+    padding: 6px;
+    border-radius: 8px;
+}
+.display{
+    color: rgba(246, 246, 247, 0.8);
+    font-family: 'Work Sans', sans-serif;
+    font-size: 32px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 8px;
+    padding-bottom: 8px;
+}
+.display .process{
+    top: 150px;
+    font-size: 24px;
+    position: absolute;
+}
+.calculator .button-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 4px;
+}
+.calculator .button-row:last-child{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    gap: 4px;
+}
+.calculator .button-row button{
+    background-color: #505458;
+    color: #e4dcef;
+    border-radius: 8px;
+    border: none;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+.calculator .button-row .action-keys {
+    background-color: #414548;
+}
+.calculator .button-row .operator {
+    background-color: #414548;
+}
+.calculator .button-row .equal{
+    background-color: #ee0e51;
+}
+.calculator .button-row .equal:hover{
+    background-color: #ff014d;
+}
+.calculator .button-row button:hover{
+    background-color: #393e46;
+    transition: 0.2s;
+}
